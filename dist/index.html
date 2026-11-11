@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMAFHZ — Nuts, Dry Fruits & Everyday Goodness</title>
+<meta name="description" content="Explore the AMAFHZ collection of almonds, cashews and raisins. Nuts and dry fruits for everyday snacking and thoughtful gifting.">
+<meta name="theme-color" content="#153d2e">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=grid-4b">
+</head>
+<body>
+<div class="announcement">A LITTLE HANDFUL. A LOT OF GOODNESS.</div>
+<header>
+<div class="header-main wrap"><a class="brand" href="#" aria-label="AMAFHZ home"><img class="brand-logo" src="assets/amafhz-logo.png" alt="AMAFHZ — Beyond Ordinary" width="1774" height="887"></a>
+<form class="search" id="searchForm" role="search"><input id="searchInput" aria-label="Search nuts and dry fruits" placeholder="Find your favourite nuts & dry fruits"><button aria-label="Search">⌕</button></form>
+<button class="bag-button" id="bagToggle">Your bag <span id="bagCount">0</span></button></div>
+<nav class="wrap nav" aria-label="Shop categories"><a href="#shop" data-filter="all" class="active">Shop all</a><a href="#shop" data-filter="Almonds">Almonds</a><a href="#shop" data-filter="Cashews">Cashews</a><a href="#shop" data-filter="Raisins">Raisins</a><a href="#gifting">Gifting & combos ↗</a></nav>
+</header>
+<main>
+<section class="hero wrap">
+<div class="hero-copy"><p class="eyebrow">INTRODUCING AMAFHZ NATURAL BITES</p><h1>Naturally good.<br><em>Beautifully packed.</em></h1><p class="intro">Almonds, cashews and golden raisins.<br class="desktop"> Your everyday favourites, in our signature jars and pouches.</p><a class="button" href="#shop">Explore the collection <span>↗</span></a><div class="hero-foot"><span>ALMONDS</span><i>·</i><span>CASHEWS</span><i>·</i><span>RAISINS</span></div></div>
+<div class="hero-image"><img src="assets/natural-bites-jars.png" alt="AMAFHZ Natural Bites almonds, cashews and raisins in ivory-labelled jars with gold lids" fetchpriority="high"><span class="image-label">THE SIGNATURE JAR COLLECTION</span></div>
+</section>
+<div class="benefits wrap"><span>01 <b>Nuts at the heart of everything</b></span><span>02 <b>From everyday bowls to gift boxes</b></span><span>03 <b>A little better, every day</b></span></div>
+<section class="section wrap" id="shop">
+<div class="section-heading"><div><p class="eyebrow">MEET YOUR EVERYDAY FAVOURITES</p><h2>Your favourite bites. Two ways.</h2></div><span class="catalog-note">Packaging preview · sample sizes & prices</span></div>
+<div class="shop-toolbar"><div class="filters" aria-label="Filter products"><button class="selected" data-filter="all">All nuts & dry fruits</button><button data-filter="Almonds">Almonds</button><button data-filter="Cashews">Cashews</button><button data-filter="Raisins">Raisins</button></div><label class="sort-label">Sort <select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></label></div>
+<div class="products" id="products"></div><p id="empty" hidden>No matches. Try almonds, cashews or raisins.</p>
+</section>
+<section class="occasion wrap" id="gifting"><div class="occasion-heading"><p class="eyebrow">GOODNESS, FOR EVERY OCCASION</p><h2>There’s always<br>room for <em>nuts.</em></h2></div><a class="occasion-card morning" href="#shop" data-filter="Almonds"><span>01 / START SLOW</span><h3>Your morning<br>handful.</h3><p>Almonds to make a little ritual of.</p><b>Explore almonds ↗</b></a><a class="occasion-card share" href="#shop" data-filter="all"><span>02 / SHARE SOMETHING GOOD</span><h3>A thoughtful<br>little gift.</h3><p>Build a selection of their favourites.</p><b>Explore the collection ↗</b></a></section>
+<section class="story wrap" id="why"><div class="story-photo"><img src="assets/natural-bites-pouches.png" alt="AMAFHZ almond, cashew and raisin pouches in ivory and gold" loading="lazy"></div><div><p class="eyebrow">THE NATURAL BITES COLLECTION</p><h2>A fresh look for<br><em>your favourites.</em></h2><p>We’re a nuts and dry-fruits brand with a simple idea: everyday snacking should be something you look forward to.</p><p>Our signature gold-lid jars and ivory pouches bring almonds, cashews and raisins together in one unmistakably AMAFHZ collection.</p><a class="text-link" href="#shop">Find your favourite ↗</a></div></section>
+</main>
+<footer><div class="wrap footer-top"><div><a class="brand" href="#"><img class="brand-logo" src="assets/amafhz-logo.png" alt="AMAFHZ — Beyond Ordinary" width="1774" height="887"></a><p>A little handful. A lot of goodness.</p></div><div><h3>The collection</h3><a href="#shop" data-filter="Almonds">Almonds</a><a href="#shop" data-filter="Cashews">Cashews</a><a href="#shop" data-filter="Raisins">Raisins</a></div><div><h3>Discover</h3><a href="#why">About AMAFHZ</a></div><div class="footer-message"><p>Nuts. Dry fruits.<br><em>Nothing ordinary.</em></p></div></div><div class="wrap footer-bottom">© 2026 AMAFHZ <span>Made for everyday goodness.</span></div></footer>
+<dialog id="cart"><div class="cart-heading"><h2>Your bag</h2><button id="closeCart" aria-label="Close bag">×</button></div><div id="cartItems"></div><div class="cart-summary"><span>Subtotal <b id="cartTotal">₹0</b></span><h3 style="margin:24px 0 8px;color:var(--gold);font-size:20px">Coming Soon</h3><p>Online ordering is coming soon. You can explore the collection and build your bag, but orders and payments are not available yet.</p><button class="button" id="continue">Continue exploring ↗</button></div></dialog>
+<div class="toast" id="toast" role="status"></div><script src="script.js?v=packaging-3"></script>
+</body></html>
